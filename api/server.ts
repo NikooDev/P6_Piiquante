@@ -1,7 +1,7 @@
 import 'module-alias/register'
 import 'dotenv/config'
 import http from 'http'
-import express, { ErrorRequestHandler } from 'express'
+import express from 'express'
 import router from './router'
 import cors, { CorsOptions } from 'cors'
 import { error404, error500 } from './handlers'
