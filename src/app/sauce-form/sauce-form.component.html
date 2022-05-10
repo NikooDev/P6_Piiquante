@@ -29,4 +29,5 @@
     </div>
   </div>
   <button mat-raised-button color="primary" (click)="onSubmit()" [disabled]="sauceForm.invalid">SUBMIT</button>
+  <p class="text-danger break-space" *ngIf="errorMsg">{{ errorMsg }}</p>
 </form>

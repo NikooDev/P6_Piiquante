@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES6",
+    "sourceMap": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "rootDir": ".",
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "@Controller": ["controllers/index.ts"],
+      "@Model": ["models/index.ts"],
+      "@Middleware": ["middlewares/index.ts"],
+      "@Type": ["types/index.ts"]
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
