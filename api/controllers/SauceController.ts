@@ -181,6 +181,8 @@ class SauceController {
             }
           }
           break
+        default:
+          return res.status(400).json({ message: 'Erreur lors de l\'enregistrement du vote' })
       }
 
       await SauceSchema.updateOne({ _id: sauceId }, fieldUpdate)
