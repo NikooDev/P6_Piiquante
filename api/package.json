@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "main": "dist/server.js",
   "license": "MIT",
-  "type": "commonjs",
   "scripts": {
     "start": "rimraf dist && tsc && NODE_ENV=production pm2 start ./dist/server.js",
     "dev": "tsc -w & pm2 start ./dist/server.js --watch",
